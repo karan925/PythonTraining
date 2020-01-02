@@ -5,4 +5,5 @@ from myfirstapp import views
 urlpatterns = [
     path('home/', views.home, name='home'),
     path('random/', views.random, name='random'),
+    path('index', views.index, name='index'),
 ]

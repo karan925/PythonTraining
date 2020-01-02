@@ -10,3 +10,8 @@ def home(request):
 
 def random(request):
     return HttpResponse("This is second page")
+
+
+def index(request):
+    return render(request, "myfirstapp/index.html", context={"context_var": "context_value"})
+    # request, template directory, context
