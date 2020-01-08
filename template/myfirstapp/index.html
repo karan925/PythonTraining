@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 
-{% load staticfiles %}
 <head>
     <title>Page Title</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myfirstapp/style.css' %}"/>
 </head>
-<style>
-body {background-color: Powderblue;}
-h1 {text-align:center;}
-</style>
+<!-- style here -->
+
 <html>
 
 <body>
-    <h1 style="color:DodgerBlue;">This is a heading</h1>
-    <p style="text-align:center;">This is a paragraph</p>
+    <h1>Welcome to the Homepage</h1>
+    <p>Click on any of the following links below to be redirected: </p>
 
-<img src="{% static 'myfirstapp/sf.png' %}" width = "100px">
+
+    <a href="http://127.0.0.1:8000/"> Home Page</a>
+    <br>
+    <a href="http://127.0.0.1:8000/home/"> Index Page </a>
+    <br>
+    <a href="http://127.0.0.1:8000/admin/"> Admin Page</a>
+    <br>
+    <a href="http://127.0.0.1:8000/random/"> Random Page</a>
     <br>
 
-<a href="http://127.0.0.1:8000/home/"> Click here to be redirected back to the home page</a>
+<img src="{% static 'myfirstapp/sf.png' %}" width = "100px" class="center">
+    <br>
+
+
 </body>
 
 </html>

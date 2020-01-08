@@ -1,0 +1,27 @@
+body {
+    background-color: AliceBlue;
+}
+h1 {
+    color: black;
+    text-align:center;
+}
+p {
+    color: Black;
+    text-align:center;
+    border: 2px solid black;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+a:link {
+  color: red;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: hotpink;
+}
