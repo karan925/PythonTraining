@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Page</title>
+</head>
+<body>
+<form method="Post">
+    <h1> Welcome to Form Page</h1>
+    <h1> Fill the form</h1>
+
+    {{ form.as_p }}
+    {% csrf_token %}
+
+    <input type="submit" class = "btn btn-primary" value="Login">
+
+</body>
+</html>
