@@ -19,12 +19,13 @@ def index(request):
 
 
 def form_view(request):
-    form = forms.Login(request.POST)
-   # if request == "POST":
-     #   form = forms.Login(request.POST)
+    form = forms.Login()
+    if request.method == "POST":
+        form = forms.Login(request.POST)
     if form.is_valid():
         print("Validation worked")
         print("Name: " + form.cleaned_data['name'])
         print("Email: " + form.cleaned_data['email'])
         print("Text: " + form.cleaned_data['text'])
+        print("Password: " + form.cleaned_data['password'])
     return render(request, "myfirstapp/forms.html", {'form': form})

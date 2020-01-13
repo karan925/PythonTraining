@@ -9,5 +9,3 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('form/', views.form_view, name ='form')
 ]
-
-urlpatterns += staticfiles_urlpatterns()
